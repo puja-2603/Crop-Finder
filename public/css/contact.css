@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+   background: url("../images/final.jpg");
+    background-size: cover;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 700px;
+    margin-top: 20px;
+    padding: 4px;
+}
+form{
+    border: 3px solid rgb(27, 27, 27);
+    width: 600px;
+    margin-left: 750px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 18px;
+    /* background-color: #ffffff; */
+}
+  label,
+  input,
+  textarea {
+      display: flex;
+      width: 100%;
+      margin-bottom: 18px;
+      padding: 8px;
+      font-size: 20px;
+      
+}
+.box1{
+    background-color: rgb(243, 243, 243);
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    
+}
+.btn{
+background-color: white;
+    padding: 0.8rem 2.3rem;
+    color: black;
+    font-size: 18px;
+    box-shadow: 5px 5px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+.btn:hover{
+    transition:all 1s;
+    color: white;
+}
+.btn::before{
+    content: "";
+        background-color: rgb(46, 252, 5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 1s;
+        z-index: -1;
+}
+.btn:hover::before {
+  transform: scaleX(1);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+@media screen  and (max-width: 600px){
+    form{
+        border: 3px solid rgb(27, 27, 27);
+        width: 300px;
+        /* margin-right: 40px; */
+        margin-left: 10px;
+        margin-top: 30px;
+        padding: 5px;
+        border-radius: 18px;
+        /* background-color: #ffffff; */
+    }
+   
+    .title{
+        font-size: 35px;
+   
+        margin-left: 10px;
+        margin-top: 15px;
+        padding: 4px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 100px;
+        font-size: 10px;
+    }
+}
+

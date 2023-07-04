@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <script>
+        function handleclick(){
+            alert("Submitted");
+        }
+        // document.getElementById("formal").addEventListener("submit",(event) => {
+        //     event.preventDefault();
+        // })
+    </script>
+    <title>Contact us</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="image">
+            <img src="corn-clipart-illustration-removebg-preview.png" alt="">
+        </div> -->
+        <div class="right">
+            <div class="heading">
+                <h1 class="title">Contact Us</h1>
+            </div>
+            <form  id="formal" action="#" method="post">
+                <label for="First Name">First Name</label>
+                <input class="box1" type="text" id="First Name" placeholder="Enter your first name" name="Name" required>
+                <label for="Last Name">Last Name</label>
+                <input class="box1" type="text" id="Last Name" placeholder="Enter your last name" name="Name" required>
+                <label for="Email Address">Email Address</label>
+                <input class="box1" type="text" id="Email Address" placeholder="Enter your email address" name="Email"
+                    required>
+                <label for="Message">Message</label>
+                <textarea class="box1" id="message" name="message" rows="5" placeholder="What are your queries?"
+                    required></textarea>
+                <div class="form-box" onclick=handleclick()>
+                    <button class="btn" cursor="pointer">
+                    Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023 Crop Finder. All rights reserved.</p>
+    </footer>
+</body>
+</div>
+
+</html>

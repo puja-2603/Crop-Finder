@@ -1,0 +1,203 @@
+body
+{
+    background-image: -webkit-linear-gradient(135deg,rgb(255, 251, 251) 50%,rgb(22, 187, 10) 50%);
+    height:80vh;
+    background-attachment: fixed;
+}
+.t
+{
+    font-family: "copperplate", fantasy;
+}
+.foot
+{
+    position:relative;
+    bottom:0vh;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    padding-top:1rem;
+}
+
+.box
+{
+    border-radius: 2rem;
+    background-color: rgba(184, 113, 7, 0.5);
+    padding:1rem;
+    margin:3rem 5rem;
+    width: 40vw;
+}
+
+.formdiv
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:40vw;
+}
+
+.flex-container
+{
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    
+}
+
+.wthr
+{
+    padding:0.5rem;
+    margin-top:10px;
+    border-radius: 1rem 0rem 0rem 1rem;
+    background-color: rgba(234, 126, 244, 0.5);
+    min-height: 40rem;
+    min-width: 15rem;
+}
+
+.blk
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+input:focus
+{
+    border-color: black;
+}
+
+.pic
+{
+    width:30rem;
+    border-radius:2rem;
+    margin-right:1rem;
+}
+
+.mainbox
+{
+    max-width:100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgba(182, 157, 119, 0.8);
+    padding:1rem;
+    margin:0rem 0rem 5rem 0rem;
+    border-radius:0rem 0rem 1rem 1rem;
+    align-items: center;
+}
+
+p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    color:rgb(245, 240, 233);
+}
+
+.fortxt
+{
+    color:rgb(0, 0, 0);
+    
+}
+
+.findcrop-p
+{
+    
+    color:rgb(0,0,0);
+    padding:2rem;
+    font-size:3vw;;
+}
+
+.postcards
+{
+    display:flex;
+    justify-content: space-between;
+    padding:3rem 4rem;
+}
+
+.cardinside
+{
+    border-radius: 1rem;
+}
+
+.writer
+{
+    font-family:'Courgette',cursive;
+}
+
+.navigation
+{
+    background-color:rgb(11, 150, 1) ;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.navigation-link
+{
+    font-size:3rem;
+}
+
+.findcrop-box
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:3vw;
+
+}
+
+
+
+.cropdetail-p
+{
+    color:black;
+    font-size:5vh;
+}
+
+.cropdbox
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 253, 253, 0.8);
+    border-radius: 2rem;
+    margin:2rem;
+    padding:2rem;
+}
+
+.boxitems
+{
+    margin:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxitems-elements
+{
+    display:flex;
+    justify-content: center;
+}
+
+.box-cropdetails
+{
+    border-radius: 2rem;
+    background-color: rgba(255, 253, 253, 0.8);
+    padding:1rem;
+    margin:3rem 5rem;
+    min-width: 30rem;
+}
+.invalid{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    left:10vw;
+    height:15vh;
+    border-radius:1vw;
+    background-color:rgba(244, 43, 8, 0.4);
+    width:30vw;
+    box-shadow: 0 0 2vh rgb(240, 11, 11);
+}
+
+.invalid-p{
+    color:rgb(240, 11, 11);
+    font-size: 2vw;
+}
+

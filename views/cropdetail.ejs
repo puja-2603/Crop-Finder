@@ -1,0 +1,50 @@
+<%- include("partials/header") %>
+
+<div class="mainbox">
+    <div>
+        <div style="display:flex;justify-content: center;">
+            <img src="./images/Tractor.jpg" alt="" style="max-width:30rem;border-radius: 2rem;margin: 2rem;">
+        </div>
+        
+        <div>
+            <div style="display:flex;justify-content: center;">
+                <h1>For <%= states %></h1>
+            </div>
+
+            <% cropdetails.forEach(function(crop){ %>
+                <div class="cropdbox">
+                    <div class="boxitems">
+                        <h4>
+                            🌾<br> <%= crop.Crops %>
+                        </h4>
+                    </div>
+                    
+                    <div class="boxitems">
+                        
+                        <p class="cropdetail-p">🖼️<br> <%= crop.Soil_type %></p>
+                    </div>
+                    <div class="boxitems">
+                        <p class="cropdetail-p">📅<br> <%= crop.months %></p>
+                    </div>
+                    <div class="boxitems">
+                        <p class="cropdetail-p">🧪<br> <%= crop.fertilizer %></p>
+                    </div>
+                    <div class="boxitems">
+                        <p class="cropdetail-p">🌧️<br> <%= crop.annual_rainfall %></p>
+                    </div>
+                    <div class="boxitems">
+                        <p class="cropdetail-p">🌡️<br> <%= crop.temp %></p>
+                    </div>
+                    
+                </div>
+                
+           <% }) %>
+        </div>
+    </div>
+    <div>
+        <a href="/findcrop"><button class="btn btn-success btn-lg">Go back</button></a>
+    </div>
+</div>
+
+
+<%- include("partials/footer") %>

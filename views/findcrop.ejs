@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+<div class="findcrop-box">
+    <div class="formdiv" >
+        <img src="images/Farmer.jpg" style="max-width:40vw;border-radius: 2rem;">
+    </div>
+    <div><p class="findcrop-p">Difficulty finding crop for your state let us help you.</p>
+        <% if(statein === 1) { %>
+            <div class="invalid">
+                <p class="invalid-p">Invalid State/Union territories</p>
+            </div>
+            
+        <%}%>
+        <div class="box">
+            <div class="formdiv">
+                <h1 class="fortxt">Find Crop</h1>
+            </div>
+            
+            <form action="/findcrop" method="post">
+                <div class="form-group blk">
+                    <label class="fortxt">State/Union territories</label>
+                    <input type="text" class="form-control" name="state" autocomplete="off">
+                </div>
+                <div class="formdiv">
+                    <div class="form-group blk">
+                        <button type="submit" class="btn btn-success btn-lg">Find Crops</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+
+
+<%- include("partials/footer") %>
